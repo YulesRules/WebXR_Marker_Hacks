@@ -1,9 +1,9 @@
 <h1>WebXR Marker Tracking + Environment-Anchored Geometry - No Flags!</h1>
 This project extends the original Immersive Web Community Group's camera access + ArUco marker tracking sample by adding the ability to anchor a 3D object in environment space based on a detected marker position. It uses WebXR, OpenCV.js with ArUco support, and WebGL2 for rendering.<br><br>
 
-The motivation behind this project is partly due to frustration: image marker tracking in WebXR has been stuck behind feature flags in Chromium (like #webxr-incubations) for several years and hasn't seen much momentum toward being unflagged. This project is my workaround - using OpenCV.js for marker tracking outside of the WebXR API, and manually converting those positions into a persistent anchor in environment space. <br><br><b><i>A potential workaround for iOS is outlined later</b></i>, stay tuned!
+The motivation behind this project is partly due to frustration: image marker tracking in WebXR has been stuck behind feature flags in Chromium (like #webxr-incubations) for several years and hasn't seen much momentum toward being unflagged. This project is my workaround - using OpenCV.js for marker tracking outside of the WebXR API, and manually converting those positions into a persistent anchor in environment space.
 
-This is also a testbed for future extensions and integrations.
+This is also a testbed for future extensions and integrations, including an iOS workaround ([see roadmap](#roadmap)).
 
 <p><br>
 Demo video: Coming soon
@@ -33,7 +33,7 @@ This project does not currently support:
 <ul> <li>Multiple persistent anchors</li>  </ul>
 It’s meant as a proof-of-concept for marker-initiated world anchoring using purely client-side JavaScript, with no reliance on cloud anchors or persistent backends.
 
-<br> <h2>Roadmap</h2> <ul> <li>Add an alternative renderer using <b>Three.js</b> for simpler integration and visual upgrades</li> <li>Add support for <b>[Variant3D](https://launch.variant3d.com/) app clip</b> to enable fast-loading marker-driven WebXR overlays</li> <li>Explore anchoring multiple objects or restoring previously stored anchors</li> <li>Add fallback handling for devices that lack WebXR or camera permissions</li> </ul> <br> <h2>Troubleshooting</h2> <ul> <li>If using Android, ensure your browser supports WebXR and camera access</li> <li>Use a secure context (localhost or HTTPS)</li> <li>Check your OpenCV.js build includes the <code>aruco</code> module</li> <li>Use a clear, well-lit printed marker like the <a href="https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html">6x6 ArUco markers</a>, (<a href="https://chev.me/arucogen/">see here for a generator</a>)</li> </ul> <br>
+<br><h2>Roadmap</h2> <ul> <li>Add an alternative renderer using <b>Three.js</b> for simpler integration and visual upgrades</li> <li>Add support for <b>[Variant3D](https://launch.variant3d.com/) app clip</b> to enable fast-loading marker-driven WebXR overlays</li> <li>Explore anchoring multiple objects or restoring previously stored anchors</li> <li>Add fallback handling for devices that lack WebXR or camera permissions</li> </ul> <br> <h2>Troubleshooting</h2> <ul> <li>If using Android, ensure your browser supports WebXR and camera access</li> <li>Use a secure context (localhost or HTTPS)</li> <li>Check your OpenCV.js build includes the <code>aruco</code> module</li> <li>Use a clear, well-lit printed marker like the <a href="https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html">6x6 ArUco markers</a>, (<a href="https://chev.me/arucogen/">see here for a generator</a>)</li> </ul> <br>
 Thanks for checking this out!
 <br><br>
 – Yulia.M
