@@ -9,7 +9,7 @@ This is also a testbed for future extensions and integrations.
 Demo video: Coming soon
 <br><br>
 
-<h2>Features</h2> <ul> <li>Marker-based tracking using OpenCV.js and ArUco markers</li> <li>Anchoring of a 3D cube in environment (local) space</li> <li>WebXR 'immersive-ar' session with camera feed and DOM overlay</li> <li>Asynchronous pixel readback to prevent frame blocking</li> </ul> <br> <h2>How it Works</h2>
+<h2>Features</h2> <ul> <li>WebXR marker tracking using OpenCV.js (flag-free)</li> <li>Anchoring of a marker-based 3D cube in environment (local) space</li> <li>WebXR 'immersive-ar' session with camera feed and DOM overlay</li> <li>Asynchronous pixel readback to prevent frame blocking</li> </ul> <br> <h2>How it Works</h2>
 When an ArUco marker is detected, its pose is extracted and transformed from viewer space into environment space using a matrix chain:
 
 Invert the viewer pose matrix to get world coordinates
