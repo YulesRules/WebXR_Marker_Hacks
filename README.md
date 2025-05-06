@@ -6,7 +6,11 @@ The motivation behind this project is partly due to frustration: image marker tr
 This is also a testbed for future extensions and integrations, including an iOS workaround ([see roadmap](#roadmap)).
 
 <p><br>
-https://github.com/user-attachments/assets/afac6e52-c813-48e4-8a10-885454f8f74d
+
+  
+https://github.com/YulesRules/WebXR_Marker_Hacks/assets/afac6e52-c813-48e4-8a10-885454f8f74d
+
+
 <br><br>
 
 <h2>Features</h2> <ul> <li>WebXR marker tracking using OpenCV.js (flag-free)</li> <li>Anchoring and updating of a marker-based 3D cube in environment (local) space</li> <li>WebXR 'immersive-ar' session with camera feed and DOM overlay</li> <li>Asynchronous pixel readback to prevent frame blocking</li> </ul> <br> <h2>How it Works</h2>
