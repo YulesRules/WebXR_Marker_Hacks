@@ -1,4 +1,4 @@
-<h1>WebXR Marker Tracking with Environment-Anchored Cube</h1>
+<h1>WebXR Marker Tracking + Environment-Anchored Geometry - No Flags!</h1> - 
 This project extends the original Immersive Web Community Group's camera access + ArUco marker tracking sample by adding the ability to anchor a 3D object in environment space based on a detected marker position. It uses WebXR, OpenCV.js with ArUco support, and WebGL2 for rendering.<br><br>
 
 The motivation behind this project is partly due to frustration: image marker tracking in WebXR has been stuck behind feature flags in Chromium (like #webxr-incubations) for several years and hasn't seen much momentum toward being unflagged. This project is my workaround - using OpenCV.js for marker tracking outside of the WebXR API, and manually converting those positions into a persistent anchor in environment space.
